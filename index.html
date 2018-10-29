@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+	<title>Countdown Timer</title>
+</head>
+<body id="main-body">
+	<header>
+	<div class="sliding-icon">
+		<a href="#" id="openNav" onclick="openNav()"><i class="fas fa-bars" style="font-size: 40px;"></i></a>
+	</div>
+
+	<nav class="main-nav">
+		<ul>
+			<li><a>Home</a></li>
+			<li><a>About</a></li>
+			<li><a>Services</a></li>
+			<li><a>Register</a></li>
+		</ul>
+	</nav>
+	<div id="sliding-nav">
+	<ul>
+		<a href="#" id="close-btn" onclick="closeNav()">X</a>
+			<li><a>Home</a></li>
+			<li><a>About</a></li>
+			<li><a>Start your CountDown</a></li>
+			<li><a>Register</a></li>
+	</ul>
+	</div>
+	</header>
+	<!-- Spinner loading animation -->
+	<div id="spinner">
+	</div>
+
+	<div class="wrapper" id="my-wrapper">
+		<p>TIME REMAINING</p>
+		<div class="boxes">
+		<div class="box box-days">
+			<div class="box1">
+				<p id="days">20</p>
+			</div>
+			<h3>Days</h3>
+		</div>
+		<div class="box box-hours">
+			<div class="box1">
+				<p id="hours">20</p>
+			</div>
+			<h3>Hours</h3>
+		</div>
+		<div class="box box-minutes">
+			<div class="box1">
+				<p id="minutes">20</p>
+			</div>
+			<h3>Minutes</h3>
+		</div>
+		<div class="box box-seconds">
+			<div class="box1">
+				<p id="seconds">20</p>
+			</div>
+			<h3>Seconds</h3>
+		</div>
+	</div>
+	</div>
+	
+</body>
+<script src="script.js"></script>
+</html>

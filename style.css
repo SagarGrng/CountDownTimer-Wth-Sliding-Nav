@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Khand');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	opacity:1;
+	color:#577793;
+	background-color:#2d3e50;
+	font-family: 'Khand', sans-serif;
+}
+header{
+	width: 100%;
+	height: 10vh;
+	background-color: white;
+}
+header .sliding-icon{
+	float: left;
+}
+.main-nav{
+	width: 80%;
+}
+.main-nav ul{
+	left:30%;
+	position: absolute;
+	float: left;
+}
+.main-nav ul li{
+	font-size: 20px;
+	float: left;
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px;
+}
+#sliding-nav #close-btn{
+	padding: 10px;
+	color: white;
+	font-size: 30px;
+	display: none;
+	text-decoration: none;
+}
+#sliding-nav{
+	position: absolute;
+	transition: .3s ease;
+	width: 300px;
+	left:-300px;
+	height: 100%;
+	background-color: #3f4044;
+}
+#sliding-nav ul li{
+	margin-top: 5%;
+	font-size: 20px;
+	padding: 10px;
+	color: white;
+}
+.wrapper{
+	opacity:1;
+	width: 80%;
+	margin:0 10%;
+	text-align: center;
+}
+.wrapper p{
+	margin-bottom: 5%;
+	font-size: 50px;
+}
+.wrapper .boxes{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 10px;
+}
+.boxes .box{
+	width: 100%;
+}
+.boxes .box .box1{
+	background-color: #ff9800;
+	color: white;
+	border-radius: 20px;
+	width: 100%;
+	height: 30vh;
+
+}
+.boxes .box .box1 p{
+	/*text-decoration-line: line-through;*/
+	font-size: 120px;
+}
+/*spinner animation*/
+
+/*keyframes animation*/
+@keyframes spin{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+#spinner{
+	opacity: 1;
+	margin-left: 45%;
+	width: 120px;
+	margin:auto;
+	height: 120px;
+	border:2px solid white;
+	border-radius: 100%;
+	border-top: 2px solid red;
+	animation:spin .5s infinite linear;
+}
